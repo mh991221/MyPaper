@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
+        </processorPath>
+        <module name="sp-fastcampus-spring-sec.web-site-manager.main" />
+        <module name="sp-fastcampus-spring-sec.web-site-student.main" />
+        <module name="sp-fastcampus-spring-sec.server-paper-app.main" />
+        <module name="sp-fastcampus-spring-sec.web-site-student.test" />
+        <module name="sp-fastcampus-spring-sec.comp-paper.main" />
+        <module name="sp-fastcampus-spring-sec.server-paper-app.test" />
+        <module name="sp-fastcampus-spring-sec.web-site-manager.test" />
+        <module name="sp-fastcampus-spring-sec.comp-paper-user.test" />
+        <module name="sp-fastcampus-spring-sec.comp-paper.test" />
+        <module name="sp-fastcampus-spring-sec.web-site-teacher.test" />
+        <module name="sp-fastcampus-spring-sec.web-site-teacher.main" />
+        <module name="sp-fastcampus-spring-sec.comp-paper-user.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
