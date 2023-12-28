@@ -84,6 +84,7 @@ public class HomeController {
         return "loginForm";
     }
 
+
     private String estimateSite(String referer) {
         if(referer == null)
             return "study.html";
@@ -117,6 +118,6 @@ public class HomeController {
         return "redirect:/" + site +"/signup";
     }
 
-    @GetMapping("/access-denied")
+    @GetMapping({"/access-denied", "/error"})
     public String accessDenied(){return "/accessDenied";}
 }

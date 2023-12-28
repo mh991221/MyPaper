@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequiredArgsConstructor
 public class TeacherMngController {
 
-    @Autowired
     private final UserService userService;
 
     @GetMapping("/list")

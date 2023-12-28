@@ -15,11 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class ManagerController {
 
-    @Autowired
-    private SchoolService schoolService;
+    private final SchoolService schoolService;
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
     @RequestMapping({"","/"})
     private String index(Model model){
@@ -27,6 +25,6 @@ public class ManagerController {
         model.addAttribute("teacherCount",userService.countTeacher());
         model.addAttribute("studyCount",userService.countStudent());
 
-        return "manager/index.html";
+        return "/manager/index.html";
     }
 }

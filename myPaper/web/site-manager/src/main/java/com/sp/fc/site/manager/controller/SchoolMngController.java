@@ -20,10 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequiredArgsConstructor
 public class SchoolMngController {
 
-    @Autowired
-    private SchoolService schoolService;
-    @Autowired
-    private UserService userService;
+
+    private final SchoolService schoolService;
+
+    private final UserService userService;
 
     @GetMapping("/list")
     private String list(

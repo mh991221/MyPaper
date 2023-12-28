@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 public class StudyMngController {
 
-    @Autowired
     private final UserService userService;
 
     @GetMapping("/list")
