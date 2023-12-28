@@ -14,7 +14,6 @@ import org.springframework.security.web.savedrequest.SavedRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -57,7 +56,7 @@ public class HomeController {
     public String login(
             @AuthenticationPrincipal User user,
             @RequestParam String site,
-            @RequestParam Boolean error,
+//            @RequestParam Boolean error,
             HttpServletRequest request,
             Model model
     ){
@@ -79,7 +78,7 @@ public class HomeController {
                 site = estimateSite(savedRequest.getRedirectUrl());
             }
         }
-        model.addAttribute("error",error);
+//        model.addAttribute("error",error);
         model.addAttribute("site",site);
 
         return "loginForm";

@@ -5,6 +5,7 @@ import com.sp.fc.user.domain.School;
 import com.sp.fc.user.service.SchoolService;
 import com.sp.fc.user.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequiredArgsConstructor
 public class SchoolMngController {
 
+    @Autowired
     private SchoolService schoolService;
+    @Autowired
     private UserService userService;
 
     @GetMapping("/list")
